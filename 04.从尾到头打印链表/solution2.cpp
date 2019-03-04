@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <string>
 using namespace std;
 
 struct ListNode
@@ -36,17 +37,25 @@ class Solution
 
 int main()
 {
-    Solution s;
-    ListNode a(1), b(2), c(3), d(4), e(5);
-    a.next = &b;
-    b.next = &c;
-    c.next = &d;
-    d.next = &e;
-    e.next = NULL;
-    vector<int> out = s.printListFromTailToHead(&a);
-    for (int i = 0; i < out.size(); ++i)
-    {
-        cout << out[i];
-    }
-    cout << endl;
+    // Solution s;
+    // ListNode a(1), b(2), c(3), d(4), e(5);
+    // a.next = &b;
+    // b.next = &c;
+    // c.next = &d;
+    // d.next = &e;
+    // e.next = NULL;
+    // vector<int> out = s.printListFromTailToHead(&a);
+    // for (int i = 0; i < out.size(); ++i)
+    // {
+    //     cout << out[i];
+    // }
+    // cout << endl;
+    string a = "a";
+    string b = a;
+    string c = b;
+    c = " ";
+    a
+            cout
+        << (c.c_str() == b.c_str());
+    return 0;
 }
