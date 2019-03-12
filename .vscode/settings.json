@@ -31,7 +31,8 @@
         "type_traits": "cpp",
         "tuple": "cpp",
         "typeinfo": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "stack": "cpp"
     },
     "python.pythonPath": "/home/bigding/anaconda3/envs/dev/bin/python",
 }
