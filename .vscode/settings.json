@@ -35,4 +35,6 @@
         "stack": "cpp"
     },
     "python.pythonPath": "/home/bigding/anaconda3/envs/dev/bin/python",
+    "python.formatting.provider": "yapf",
+    "python.linting.pylintEnabled": true,
 }
