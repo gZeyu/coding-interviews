@@ -4,7 +4,7 @@ public class Solution {
         Solution s = new Solution();
         ListNode pHead;
         pHead = ListNode.createList(new int[] { 1, 2, 3, 3, 4, 4, 5 });
-        pHead.next.next.next.next.next.next = pHead.next.next.next;
+        pHead.next.next.next.next.next.next.next = pHead.next.next.next;
         s.EntryNodeOfLoop(pHead);
         System.out.println(s.getNodeOfLoop(pHead).val);
         return;
@@ -21,8 +21,17 @@ public class Solution {
             lengthOfLoop++;
             node2 = node2.next;
         }
-        System.out.println(lengthOfLoop);
-        return pHead;
+        node1 = pHead;
+        node2 = pHead;
+        for (int i = 0; i <lengthOfLoop; i++){
+            node2 = node2.next;
+        }
+        while (node1 != node2){
+            node1 = node1.next;
+            node2 = node2.next;
+        }
+
+        return node1;
     }
 
     private ListNode getNodeOfLoop(ListNode pHead) {
